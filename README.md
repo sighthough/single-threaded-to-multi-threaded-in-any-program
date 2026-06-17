@@ -35,7 +35,6 @@ Step 3: The main thread moves to C. Because A and B were just finalized, Core 3 
 Step 4: The main thread moves to D. Core 4 finished this ages ago. The main thread just grabs the cached result instantly.
 
 
-Now considering that Task C needed A and B and did not perform anything up to that time , until it is  enabled it can go with the next group of tasks  for completion!
 
 When a task like C is blocked because its inputs (A and B) aren't ready yet, your system doesn't let the CPU cores just sit there twiddling their thumbs. Instead, it queues C up to wait in a holding pen, bypasses it, and starts working on E, F, and G in parallel while C waits for its data to arrive.
 
