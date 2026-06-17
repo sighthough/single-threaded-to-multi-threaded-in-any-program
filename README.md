@@ -78,9 +78,13 @@ The ledger insists on finalizing them in strict order: A, then B, then C, then E
 
 So, if code further down the line tries to look at the global state of the program, it sees a perfectly ordered, single-threaded execution. But behind the scenes, the CPU was frantically juggling E, F, and G in the background while C was waiting.
 
+While this is not the fastest way to do things for example a native multi threaded program will definately be more efficient , it can actually make ANY single threaded program multi threaded which will theoretically be faster than its default single threaded implementation.
+
 
 Hope this helps :3
 
 i include a vibe coded python example in the repository, idk if it will work ok tho as its vibe coded and im not that great at python to see if it really works but it should help you get the idea !
 
 May your implementation be swift and bug free, be well
+
+this was a colaboration between Sightough and google's gemini 3.5 ai 
