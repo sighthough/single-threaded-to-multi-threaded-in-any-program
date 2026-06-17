@@ -86,4 +86,4 @@ i include a vibe coded python example in the repository, idk if it will work ok 
 
 May your implementation be swift and bug free, be well
 
-this was a colaboration between Sightough and google's gemini 3.5 ai 
+this was a colaboration between Sighthough and google's gemini 3.5 ai 
